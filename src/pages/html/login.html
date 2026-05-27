@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Account | theDailyCrop.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../../assets/images/icons/dc-logo.png" />
+
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="../../assets/images/icons/dc-logo.png"
+            alt="DailyCrop Logo"
+            class="dc-logo"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="boxes.html">Our Boxes</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="cart.html"
+            ><img
+              src="../../assets/images/icons/cart-icon.png"
+              alt="Cart"
+              class="cart-icon"
+          /></a>
+          <a href="login.html"
+            ><img
+              src="../../assets/images/icons/acc-icon.png"
+              alt="Account"
+              class="profile-icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Login / Account Section -->
+    <section class="login-section">
+      <!-- LOGIN FORM -->
+      <div class="login-container" id="login-box">
+        <h1>Welcome Back</h1>
+        <p>Log in to continue your harvest journey.</p>
+
+        <form id="login-form">
+          <div class="input-group">
+            <label>Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="remember-row">
+            <label class="remember">
+              <input type="checkbox" />
+              Remember me
+            </label>
+
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn">Log In</button>
+        </form>
+      </div>
+
+      <!-- ACCOUNT PAGE -->
+      <div class="login-container" id="account-box" style="display: none">
+        <h1>Hello, <span id="display-user"></span> 👋</h1>
+
+        <p>Welcome back to DailyCrop.</p>
+
+        <button id="logout-btn" class="btn">Logout</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <img
+          src="../../assets/images/text/footer-text.png"
+          alt="Footer Logo"
+          class="footer-text"
+        />
+      </div>
+
+      <div class="footer-description">
+        Bringing fresh harvests and curated boxes straight to your doorstep.
+      </div>
+
+      <div class="footer-follow">
+        <h4>Follow Us</h4>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <p>TikTok</p>
+      </div>
+
+      <div class="footer-bottom">© 2025 Harvest Co. All Rights Reserved.</div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

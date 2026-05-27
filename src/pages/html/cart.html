@@ -1,144 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>theDailyCrop. | Cart</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>theDailyCrop. | Cart</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="../../pages/css/cart.css">
+    <link rel="icon" href="../../assets/images/icons/dc-logo.png" />
 
-  <script src="../../pages/js/script.js" defer></script>
+    <link rel="stylesheet" href="../../pages/css/cart.css" />
+  </head>
 
-</head>
-<body>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../../assets/Images/icons/dc-logo.png" class="dc-logo" />
+        </div>
 
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="../../assets/Images/icons/dc-logo.png" alt="DailyCrop Logo" class="dc-logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="boxes.html">Our Boxes</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <div class="nav-icons">
-        <a href="cart.html"><img src="../../assets/Images/icons/cart-icon.png" alt="Cart" class="cart-icon"></a>
-        <a href="signup.html"><img src="../../assets/Images/icons/acc-icon.png" alt="Account" class="profile-icon"></a>
-      </div>
-    </nav>
-  </header>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="boxes.html">Our Boxes</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
 
-  <!-- ===== Cart Section ===== -->
-  <section class="cart">
-    
-     <div class="cart-header">
+        <div class="nav-icons">
+          <a href="cart.html">
+            <img src="../../assets/Images/icons/cart-icon.png" />
+          </a>
+          <a href="login.html">
+            <img src="../../assets/Images/icons/acc-icon.png" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CART -->
+    <section class="cart">
+      <div class="cart-header">
         <h1 class="cart-title">DailyCrop Checkout</h1>
-        <h2 class="cart-subtitle">Review your harvest, add extras, and choose your subscription.</h2>
+        <h2 class="cart-subtitle">
+          Review your harvest, add extras, and choose your subscription.
+        </h2>
+      </div>
+
+      <!-- BASKET -->
+      <div class="cart-box basket-overview">
+        <h2>Basket Overview</h2>
+
+        <div id="cart-items"></div>
+
+        <button class="add-box">+ Add Another Box</button>
+
+        <h3>Add-ons:</h3>
+
+        <label><input type="checkbox" /> Farm Eggs (1 dozen)</label>
+        <label><input type="checkbox" /> Organic Honey</label>
+        <label><input type="checkbox" /> Herbal Teas</label>
+
+        <h3>Subscription:</h3>
+
+        <label><input type="radio" name="subscription" /> One-time order</label>
+        <label
+          ><input type="radio" name="subscription" /> Weekly subscription</label
+        >
+        <label
+          ><input type="radio" name="subscription" /> Monthly
+          subscription</label
+        >
+
+        <h3>Delivery Date:</h3>
+        <input type="date" id="delivery-date" />
+      </div>
+
+      <!-- ORDER FORM -->
+      <div class="cart-box order-form">
+        <h2>Order Form</h2>
+
+        <form novalidate>
+          <label>Full Name</label>
+          <input type="text" required />
+
+          <label>Address</label>
+          <input type="text" required />
+
+          <label>Contact Number</label>
+          <input type="text" required />
+
+          <label>Email</label>
+          <input type="email" required />
+
+          <h3>Payment Method</h3>
+
+          <label
+            ><input type="radio" name="payment" required /> Cash on
+            Delivery</label
+          >
+          <label><input type="radio" name="payment" /> E-Wallet</label>
+          <label><input type="radio" name="payment" /> Card</label>
+
+          <h3>Order Summary</h3>
+
+          <div class="order-summary"></div>
+
+          <p><strong>Total: PHP 0.00</strong></p>
+
+          <button type="button" class="place-order">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <img src="../../assets/Images/text/footer-text.png" />
+
+      <div class="footer-description">
+        <p>
+          DailyCrop is a seasonal subscription service delivering fresh, locally
+          sourced produce.
+        </p>
+      </div>
+
+      <div class="footer-follow">
+        <h4>Follow us on:</h4>
+        <p>Facebook | Instagram | TikTok</p>
+        <p>@thedailycrop</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Rie | Student Project</p>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="confirm-modal" id="confirm-modal">
+      <div class="confirm-box">
+        <h2>Confirm Your Order</h2>
+
+        <div class="receipt-content" id="receipt-content"></div>
+
+        <div class="confirm-buttons">
+          <button class="cancel-btn" id="cancel-order">Cancel</button>
+          <button class="confirm-btn" id="confirm-order">Confirm</button>
+        </div>
+      </div>
     </div>
 
-    <div class="cart-box basket-overview">
-  <h2>Basket Overview</h2>
-
-  <!-- First Box -->
-  <div class="box-item">
-    <label for="box-type">Box Type:</label>
-    <select id="box-type">
-      <option>Solo Harvest (Small)</option>
-      <option>Family Fresh (Medium)</option>
-      <option>Community Feast (Large)</option>
-    </select>
-
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" min="1" value="1">
-
-    <!-- Remove button -->
-    <button class="remove-box">Remove</button>
-  </div>
-
-  <!-- Add another box -->
-  <button class="add-box">+ Add Another Box</button>
-
-  <h3>Add-ons:</h3>
-  <label><input type="checkbox"> Farm Eggs (1 dozen)</label>
-  <label><input type="checkbox"> Organic Honey</label>
-  <label><input type="checkbox"> Herbal Teas</label>
-
-  <h3>Subscription:</h3>
-  <label><input type="radio" name="subscription"> One-time order</label>
-  <label><input type="radio" name="subscription"> Weekly subscription</label>
-  <label><input type="radio" name="subscription"> Monthly subscription</label>
-
-  <h3>Delivery Date:</h3>
-  <input type="date" id="delivery-date">
-</div>
-
-
-    <!-- Order Form -->
-    <div class="cart-box order-form">
-  <h2>Order Form</h2>
-
-  <form>
-    <label>Full Name:</label>
-    <input type="text" required>
-
-    <label>Address:</label>
-    <input type="text" required>
-
-    <label>Contact Number:</label>
-    <input type="text" required>
-
-    <label>Email:</label>
-    <input type="email" required>
-
-    <h3>Payment Method:</h3>
-    <label><input type="radio" name="payment" required> Cash on Delivery</label><br>
-    <label><input type="radio" name="payment"> E-Wallet</label><br>
-    <label><input type="radio" name="payment"> Card</label><br>
-
-    <!-- Order Summary -->
-    <h3>Order Summary:</h3>
-    <div class="order-summary"></div>
-
-    <!-- Total -->
-    <p><strong>Total: PHP 0.00</strong></p>
-
-    <!-- Place Order Button -->
-    <button type="button" class="place-order">Place Order</button>
-  </form>
-</div>
-
-<!-- Popup -->
-<div class="popup" id="order-popup">
-  <p>Order is placed!</p>
-</div>
-
-
-  <!-- Popup Confirmation -->
-  <div class="popup" id="order-popup">
-    <p>Order is placed!</p>
-  </div>
-
-  <!-- ===== Footer ===== -->
-  <footer>
-    <img src="../../assets/Images/text/footer-text.png" alt="theDailyCrop." class="footer-text">
-
-    <div class="footer-description">
-      <p>DailyCrop is a seasonal subscription service delivering fresh, locally sourced fruits and vegetables straight to your home.</p>
+    <!-- SUCCESS -->
+    <div class="success-popup" id="success-popup">
+      <p>Order Successfully Placed 🌱</p>
     </div>
 
-    <div class="footer-follow">
-      <h4>Follow us on:</h4>
-      <p>Facebook | Instagram | TikTok</p>
-      <p>@thedailycrop</p>
+    <!-- VALIDATION POPUP -->
+    <div class="error-popup" id="error-popup">
+      <p id="error-message"></p>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2026 Rie | Student Project</p>
-    </div>
-  </footer>
-
-</body>
+    <!-- JS -->
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
 </html>

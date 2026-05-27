@@ -1,33 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>theDailyCrop. | Home</title>
+    <title>theDailyCrop. | Home</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="../../pages/css/style.css">
-</head>
+    <link rel="icon" href="../../assets/images/icons/dc-logo.png" />
 
-<body class="home">
+    <link rel="stylesheet" href="../../pages/css/style.css" />
+  </head>
 
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="../../assets/images/icons/dc-logo.png" alt="DailyCrop Logo" class="dc-logo">
+  <body class="home">
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="../../assets/images/icons/dc-logo.png"
+            alt="DailyCrop Logo"
+            class="dc-logo"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="boxes.html">Our Boxes</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="cart.html"
+            ><img
+              src="../../assets/images/icons/cart-icon.png"
+              alt="Cart"
+              class="cart-icon"
+          /></a>
+          <a href="login.html"
+            ><img
+              src="../../assets/images/icons/acc-icon.png"
+              alt="Account"
+              class="profile-icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <video autoplay muted loop playsinline id="heroVideo">
+        <source src="../../assets/videos/hero-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay">
+        <img
+          src="../../assets/images/text/hero-home-text.png"
+          alt="theDailyCrop"
+          class="hero-text"
+        />
+        <h2>Harvested with care, delivered with love.</h2>
+        <a href="boxes.html" class="btn">See Our Boxes</a>
       </div>
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="boxes.html">Our Boxes</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <div class="nav-icons">
-        <a href="cart.html"><img src="../../assets/images/icons/cart-icon.png" alt="Cart" class="cart-icon"></a>
-        <a href="signup.html"><img src="../../assets/images/icons/acc-icon.png" alt="Account" class="profile-icon"></a>
+
+      <audio autoplay loop id="bgMusic">
+        <source src="../../assets/audio/cozy-music.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <!-- Value Highlights -->
+    <section class="highlights">
+      <div class="highlight">
+        <img
+          src="../../assets/images/icons/val-icon1.png"
+          alt="Fresh & Local"
+        />
+        <h3>FRESH & LOCAL</h3>
+        <p>Straight from nearby farms</p>
       </div>
+<<<<<<< HEAD
     </nav>
   </header>
 
@@ -79,66 +132,128 @@
       <div class="box-card">
         <img src="../../assets/images/boxes/small-box.png" alt="Solo Harvest">
         <h3>Solo Harvest</h3>
+=======
+      <div class="highlight">
+        <img
+          src="../../assets/images/icons/val-icon2.png"
+          alt="Sustainably Sourced"
+        />
+        <h3>SUSTAINABLY SOURCED</h3>
+        <p>Good for you, good for the planet</p>
+>>>>>>> a30b349c8a445e05dad4d235348e12cef4f9d345
       </div>
-      <div class="box-card">
-        <img src="../../assets/images/boxes/med-box.png" alt="Family Fresh">
-        <h3>Family Fresh</h3>
+      <div class="highlight">
+        <img
+          src="../../assets/images/icons/val-icon3.png"
+          alt="100% Satisfaction"
+        />
+        <h3>100% SATISFACTION</h3>
+        <p>Happiness in every box</p>
       </div>
-      <div class="box-card">
-        <img src="../../assets/images/boxes/large-box.png" alt="Community Feast">
-        <h3>Community Feast</h3>
+      <div class="highlight">
+        <img
+          src="../../assets/images/icons/val-icon4.png"
+          alt="Free Delivery"
+        />
+        <h3>FREE DELIVERY</h3>
+        <p>Fast and secure</p>
       </div>
-    </div>
-    <a href="boxes.html" class="btn">See All Boxes</a>
-  </section>
+    </section>
 
-  <!-- About Preview -->
-  <section class="about-preview">
-    <img src="../../assets/images/bgs/about-section.png" alt="About DailyCrop">
-    <div class="about-text">
-      <h2>Fresh. Local. Yours.</h2>
-      <h2>Every harvest tells a story of care, community, and freshness.</h2>
-      <p>At DailyCrop, every harvest begins with local farmers who nurture the land and grow with care. 
-        Your box isn’t just produce — it’s a story of community, sustainability, and freshness delivered straight to your home.</p>
-      <a href="about.html" class="btn">Learn More</a>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>Loved by Our Community</h2>
-    <h2>See why families trust DailyCrop for their weekly harvest.</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial">
-        <p>“DailyCrop’s mix of fruits and veggies keeps my meals exciting every week!”</p>
-        <span>- Anna Marie, Manila</span>
+    <!-- Boxes Preview -->
+    <section class="boxes-preview">
+      <h2>Seasonal fruits & veggies.</h2>
+      <div class="box-cards">
+        <div class="box-card">
+          <img
+            src="../../assets/images/boxes/small-box.png"
+            alt="Solo Harvest"
+          />
+          <h3>Solo Harvest</h3>
+        </div>
+        <div class="box-card">
+          <img src="../../assets/images/boxes/med-box.png" alt="Family Fresh" />
+          <h3>Family Fresh</h3>
+        </div>
+        <div class="box-card">
+          <img
+            src="../../assets/images/boxes/large-box.png"
+            alt="Community Feast"
+          />
+          <h3>Community Feast</h3>
+        </div>
       </div>
-      <div class="testimonial">
-        <p>“I love the freshness — it feels like the farm is right at my doorstep.”</p>
-        <span>- Johnny Orlando, Cebu</span>
+      <a href="boxes.html" class="btn">See All Boxes</a>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+      <img
+        src="../../assets/images/bgs/about-section.png"
+        alt="About DailyCrop"
+      />
+      <div class="about-text">
+        <h2>Fresh. Local. Yours.</h2>
+        <h2>Every harvest tells a story of care, community, and freshness.</h2>
+        <p>
+          At DailyCrop, every harvest begins with local farmers who nurture the
+          land and grow with care. Your box isn’t just produce — it’s a story of
+          community, sustainability, and freshness delivered straight to your
+          home.
+        </p>
+        <a href="about.html" class="btn">Learn More</a>
       </div>
-    </div>
-  </section>
+    </section>
 
- <footer>
-  <img src="../../assets/images/text/footer-text.png" alt="theDailyCrop." class="footer-text">
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>Loved by Our Community</h2>
+      <h2>See why families trust DailyCrop for their weekly harvest.</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p>
+            “DailyCrop’s mix of fruits and veggies keeps my meals exciting every
+            week!”
+          </p>
+          <span>- Anna Marie, Manila</span>
+        </div>
+        <div class="testimonial">
+          <p>
+            “I love the freshness — it feels like the farm is right at my
+            doorstep.”
+          </p>
+          <span>- Johnny Orlando, Cebu</span>
+        </div>
+      </div>
+    </section>
 
-  <div class="footer-description">
-    <p>DailyCrop is a seasonal subscription service delivering fresh, locally sourced fruits and vegetables straight to your home.</p>
-  </div>
+    <footer>
+      <img
+        src="../../assets/images/text/footer-text.png"
+        alt="theDailyCrop."
+        class="footer-text"
+      />
 
-  <div class="footer-follow">
-    <h4>Follow us on:</h4>
-    <p>Facebook | Instagram | TikTok</p>
-    <p>@thedailycrop</p>
-  </div>
+      <div class="footer-description">
+        <p>
+          DailyCrop is a seasonal subscription service delivering fresh, locally
+          sourced fruits and vegetables straight to your home.
+        </p>
+      </div>
 
-  <div class="footer-bottom">
-    <p>© 2026 Rie | Student Project</p>
-  </div>
-</footer>
+      <div class="footer-follow">
+        <h4>Follow us on:</h4>
+        <p>Facebook | Instagram | TikTok</p>
+        <p>@thedailycrop</p>
+      </div>
 
-  <!-- JS -->
-  <script src="../../js/script.js"></script>
-</body>
+      <div class="footer-bottom">
+        <p>© 2026 Rie | Student Project</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/auth.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
 </html>
