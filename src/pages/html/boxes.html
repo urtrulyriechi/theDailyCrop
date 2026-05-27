@@ -1,164 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-  <title>theDailyCrop. | Our Boxes</title>
+    <title>theDailyCrop. | Our Boxes</title>
 
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-   <link rel="stylesheet" href="../../pages/css/boxes.css">
-</head>
+    <link rel="icon" href="../../assets/images/icons/dc-logo.png" />
 
-<body>
+    <link rel="stylesheet" href="../../pages/css/boxes.css" />
+  </head>
 
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="../../assets/images/icons/dc-logo.png" alt="DailyCrop Logo" class="dc-logo">
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="../../assets/images/icons/dc-logo.png"
+            alt="DailyCrop Logo"
+            class="dc-logo"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="boxes.html">Our Boxes</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="cart.html"
+            ><img
+              src="../../assets/images/icons/cart-icon.png"
+              alt="Cart"
+              class="cart-icon"
+          /></a>
+          <a href="login.html"
+            ><img
+              src="../../assets/images/icons/acc-icon.png"
+              alt="Account"
+              class="profile-icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="../../assets/Images/bgs/hero-box-section.png"
+        alt="DailyCrop Hero"
+        class="hero-image"
+      />
+
+      <div class="hero-overlay">
+        <div class="hero-left">
+          <img
+            src="../../assets/Images/text/hero-box-text.png"
+            alt="DailyCrop"
+            class="hero-text"
+          />
+        </div>
+        <div class="hero-right">
+          <h2>Fresh, seasonal harvests delivered weekly or monthly.</h2>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="boxes.html">Our Boxes</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <div class="nav-icons">
-        <a href="cart.html"><img src="../../assets/images/icons/cart-icon.png" alt="Cart" class="cart-icon"></a>
-        <a href="signup.html"><img src="../../assets/images/icons/acc-icon.png" alt="Account" class="profile-icon"></a>
+    </section>
+
+    <!-- ===== Steps Section (same as highlights) ===== -->
+    <section class="steps">
+      <div class="step">
+        <img src="../../assets/Images/icons/step-icon1.png" alt="Pick Box" />
+        <h3>Pick Your Box Size</h3>
+        <p>Solo, Family, or Community</p>
       </div>
-    </nav>
-  </header>
+      <div class="step">
+        <img src="../../assets/Images/icons/step-icon2.png" alt="Customize" />
+        <h3>Customize Your Harvest</h3>
+        <p>Fruits, veggies, or mix</p>
+      </div>
+      <div class="step">
+        <img src="../../assets/Images/icons/step-icon3.png" alt="Schedule" />
+        <h3>Set Your Schedule</h3>
+        <p>Weekly or monthly</p>
+      </div>
+      <div class="step">
+        <img src="../../assets/Images/icons/step-icon4.png" alt="Delivery" />
+        <h3>Enjoy Doorstep Delivery!</h3>
+      </div>
+    </section>
 
-  <!-- Hero Section -->
-<section class="hero">
-  <img src="../../assets/Images/bgs/hero-box-section.png" alt="DailyCrop Hero" class="hero-image">
+    <!-- ===== Harvest Plans Section ===== -->
+    <section class="harvest-plans">
+      <h2 class="harvest-title">Harvest Plans</h2>
 
-  <div class="hero-overlay">
-    <div class="hero-left">
-      <img src="../../assets/Images/text/hero-box-text.png" alt="DailyCrop" class="hero-text">
+      <div class="plan">
+        <div class="plan-image">
+          <img
+            src="../../assets/images/boxes/small-box.png"
+            alt="Solo Harvest"
+          />
+        </div>
+        <div class="plan-info">
+          <h3>Solo Harvest Box (Small)</h3>
+          <p><strong>Perfect for 1–2 people</strong></p>
+          <p>
+            A compact mix of seasonal fruits and veggies, ideal for singles or
+            couples.
+          </p>
+          <a href="#" class="btn add-cart" data-box="Solo Harvest (Small)">
+            Add to Cart
+          </a>
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-image">
+          <img src="../../assets/images/boxes/med-box.png" alt="Family Fresh" />
+        </div>
+        <div class="plan-info">
+          <h3>Family Fresh Box (Medium)</h3>
+          <p><strong>Balanced mix for households</strong></p>
+          <p>
+            A balanced selection of produce to keep your household stocked with
+            healthy options.
+          </p>
+          <a href="#" class="btn add-cart" data-box="Family Fresh (Medium)">
+            Add to Cart
+          </a>
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-image">
+          <img
+            src="../../assets/images/boxes/large-box.png"
+            alt="Community Feast"
+          />
+        </div>
+        <div class="plan-info">
+          <h3>Community Feast Box (Large)</h3>
+          <p><strong>Generous box for sharing</strong></p>
+          <p>
+            A large, abundant box filled with diverse fruits and vegetables,
+            perfect for gatherings or big families.
+          </p>
+          <a href="#" class="btn add-cart" data-box="Community Feast (Large)">
+            Add to Cart
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Compare Boxes Section ===== -->
+    <section class="compare-boxes">
+      <h2 class="compare-title">Compare Our Harvest Boxes</h2>
+      <p class="compare-subtitle">
+        See what’s inside each box, tailored for your needs.
+      </p>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <img
+            src="../../assets/images/boxes/small-box.png"
+            alt="Solo Harvest"
+            class="compare-image"
+          />
+          <h3>Solo Harvest (Small)</h3>
+          <p class="subtitle">Serves: 1–2 people</p>
+          <p>
+            ~5–10 items: mix of seasonal fruits (mango, banana, papaya) +
+            veggies (eggplant, okra, pechay)
+          </p>
+        </div>
+
+        <div class="compare-card">
+          <img
+            src="../../assets/images/boxes/med-box.png"
+            alt="Family Fresh"
+            class="compare-image"
+          />
+          <h3>Family Fresh (Medium)</h3>
+          <p class="subtitle">Serves: 3–4 people</p>
+          <p>
+            ~10–15 items: balanced mix of fruits (pineapple, melon, calamansi) +
+            veggies (ampalaya, sitaw, carrots, leafy greens)
+          </p>
+        </div>
+
+        <div class="compare-card">
+          <img
+            src="../../assets/images/boxes/large-box.png"
+            alt="Community Feast"
+            class="compare-image"
+          />
+          <h3>Community Feast (Large)</h3>
+          <p class="subtitle">Serves: 5+ people</p>
+          <p>
+            ~15–20 items: abundant selection including tropical fruits (mangoes,
+            bananas, watermelon) + diverse veggies (squash, cabbage, tomatoes,
+            malunggay)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer (same as Home) ===== -->
+    <footer>
+      <img
+        src="../../assets/images/text/footer-text.png"
+        alt="theDailyCrop."
+        class="footer-text"
+      />
+
+      <div class="footer-description">
+        <p>
+          DailyCrop is a seasonal subscription service delivering fresh, locally
+          sourced fruits and vegetables straight to your home.
+        </p>
+      </div>
+
+      <div class="footer-follow">
+        <h4>Follow us on:</h4>
+        <p>Facebook | Instagram | TikTok</p>
+        <p>@thedailycrop</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Rie | Student Project</p>
+      </div>
+    </footer>
+
+    <!-- Custom Popup -->
+    <div id="cart-popup" class="cart-popup">
+      <p id="popup-message"></p>
     </div>
-    <div class="hero-right">
-      <h2>Fresh, seasonal harvests delivered weekly or monthly.</h2>
-    </div>
-  </div>
-</section>
 
-
-  <!-- ===== Steps Section (same as highlights) ===== -->
-  <section class="steps">
-    <div class="step">
-      <img src="../../assets/Images/icons/step-icon1.png" alt="Pick Box">
-      <h3>Pick Your Box Size</h3>
-      <p>Solo, Family, or Community</p>
-    </div>
-    <div class="step">
-      <img src="../../assets/Images/icons/step-icon2.png" alt="Customize">
-      <h3>Customize Your Harvest</h3>
-      <p>Fruits, veggies, or mix</p>
-    </div>
-    <div class="step">
-      <img src="../../assets/Images/icons/step-icon3.png" alt="Schedule">
-      <h3>Set Your Schedule</h3>
-      <p>Weekly or monthly</p>
-    </div>
-    <div class="step">
-      <img src="../../assets/Images/icons/step-icon4.png" alt="Delivery">
-      <h3>Enjoy Doorstep Delivery!</h3>
-    </div>
-  </section>
-
-<!-- ===== Harvest Plans Section ===== -->
-<section class="harvest-plans">
-  <h2 class="harvest-title">Harvest Plans</h2>
-
-  <div class="plan">
-    <div class="plan-image">
-      <img src="../../assets/images/boxes/small-box.png" alt="Solo Harvest">
-    </div>
-    <div class="plan-info">
-      <h3>Solo Harvest Box (Small)</h3>
-      <p><strong>Perfect for 1–2 people</strong></p>
-      <p>A compact mix of seasonal fruits and veggies, ideal for singles or couples.</p>
-      <a href="#" class="btn">Add to Cart</a>
-    </div>
-  </div>
-
-  <div class="plan">
-    <div class="plan-image">
-      <img src="../../assets/images/boxes/med-box.png" alt="Family Fresh">
-    </div>
-    <div class="plan-info">
-      <h3>Family Fresh Box (Medium)</h3>
-      <p><strong>Balanced mix for households</strong></p>
-      <p>A balanced selection of produce to keep your household stocked with healthy options.</p>
-      <a href="#" class="btn">Add to Cart</a>
-    </div>
-  </div>
-
-  <div class="plan">
-    <div class="plan-image">
-      <img src="../../assets/images/boxes/large-box.png" alt="Community Feast">
-    </div>
-    <div class="plan-info">
-      <h3>Community Feast Box (Large)</h3>
-      <p><strong>Generous box for sharing</strong></p>
-      <p>A large, abundant box filled with diverse fruits and vegetables, perfect for gatherings or big families.</p>
-      <a href="#" class="btn">Add to Cart</a>
-    </div>
-  </div>
-</section>
-
-
-  <!-- ===== Compare Boxes Section ===== -->
-<section class="compare-boxes">
-  <h2 class="compare-title">Compare Our Harvest Boxes</h2>
-  <p class="compare-subtitle">See what’s inside each box, tailored for your needs.</p>
-
-  <div class="compare-grid">
-    <div class="compare-card">
-      <img src="../../assets/images/boxes/small-box.png" alt="Solo Harvest" class="compare-image">
-      <h3>Solo Harvest (Small)</h3>
-      <p class="subtitle">Serves: 1–2 people</p>
-      <p>~5–10 items: mix of seasonal fruits (mango, banana, papaya) + veggies (eggplant, okra, pechay)</p>
-    </div>
-
-    <div class="compare-card">
-      <img src="../../assets/images/boxes/med-box.png" alt="Family Fresh" class="compare-image">
-      <h3>Family Fresh (Medium)</h3>
-      <p class="subtitle">Serves: 3–4 people</p>
-      <p>~10–15 items: balanced mix of fruits (pineapple, melon, calamansi) + veggies (ampalaya, sitaw, carrots, leafy greens)</p>
-    </div>
-
-    <div class="compare-card">
-      <img src="../../assets/images/boxes/large-box.png" alt="Community Feast" class="compare-image">
-      <h3>Community Feast (Large)</h3>
-      <p class="subtitle">Serves: 5+ people</p>
-      <p>~15–20 items: abundant selection including tropical fruits (mangoes, bananas, watermelon) + diverse veggies (squash, cabbage, tomatoes, malunggay)</p>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- ===== Footer (same as Home) ===== -->
-  <footer>
-    <img src="../../assets/images/text/footer-text.png" alt="theDailyCrop." class="footer-text">
-
-    <div class="footer-description">
-      <p>DailyCrop is a seasonal subscription service delivering fresh, locally sourced fruits and vegetables straight to your home.</p>
-    </div>
-
-    <div class="footer-follow">
-      <h4>Follow us on:</h4>
-      <p>Facebook | Instagram | TikTok</p>
-      <p>@thedailycrop</p>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Rie | Student Project</p>
-    </div>
-  </footer>
-
-</body>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart-system.js"></script>
+  </body>
 </html>

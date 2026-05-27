@@ -5,16 +5,16 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #FDFBF7;
-  color: #2C3E2B;
+  font-family: "Inter", sans-serif;
+  background-color: #fdfbf7;
+  color: #2c3e2b;
   line-height: 1.6;
 }
 
 /* ===== Header ===== */
 header {
-  background-color: #2C3E2B;
-  color: #FDFBF7;
+  background-color: #2c3e2b;
+  color: #fdfbf7;
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -36,9 +36,9 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #FDFBF7;
+  color: #fdfbf7;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-links a:hover {
@@ -95,13 +95,12 @@ header {
 }
 
 .hero-right h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.2rem;
   color: #f8eeea;
   text-align: right;
   max-width: 400px;
 }
-
 
 /* ===== Steps Section ===== */
 .steps {
@@ -120,11 +119,9 @@ header {
 
 .step h3 {
   color: #c87a53;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0.5rem;
 }
-
-
 
 /* ===== Harvest Plans Section ===== */
 .harvest-plans {
@@ -136,9 +133,9 @@ header {
 }
 
 .harvest-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.4rem;
-  color: #FDFBF7;
+  color: #fdfbf7;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -147,9 +144,9 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
-  background-color: #FDFBF7;
+  background-color: #fdfbf7;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(44,62,43,0.25);
+  box-shadow: 0 6px 12px rgba(44, 62, 43, 0.25);
   padding: 2rem;
 }
 
@@ -174,10 +171,10 @@ header {
 }
 
 .plan-info h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #2C3E2B;
+  color: #2c3e2b;
   margin-bottom: 0.75rem;
 }
 
@@ -188,7 +185,7 @@ header {
 }
 
 .plan-info p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -200,7 +197,7 @@ header {
   padding: 0.7rem 1.5rem;
   border-radius: 25px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   align-self: flex-start;
   border: 2px solid #8a9a86;
@@ -210,7 +207,6 @@ header {
   background-color: #8a9a86;
 }
 
-
 /* ===== Compare Our Harvest Boxes Section ===== */
 .compare-boxes {
   background-color: #8a9a86;
@@ -219,14 +215,14 @@ header {
 }
 
 .compare-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.2rem;
   color: #f8eeea;
   margin-bottom: 0.5rem;
 }
 
 .compare-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 3rem;
 }
@@ -238,16 +234,18 @@ header {
 }
 
 .compare-card {
-  background-color: #FDFBF7;
+  background-color: #fdfbf7;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(44,62,43,0.25);
+  box-shadow: 0 8px 16px rgba(44, 62, 43, 0.25);
   padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .compare-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(44,62,43,0.35);
+  box-shadow: 0 12px 20px rgba(44, 62, 43, 0.35);
 }
 
 .compare-image {
@@ -258,9 +256,9 @@ header {
 }
 
 .compare-card h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-  color: #2C3E2B;
+  color: #2c3e2b;
   margin-bottom: 0.5rem;
 }
 
@@ -271,16 +269,14 @@ header {
 }
 
 .compare-card p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
 
-
-
 /* ===== Footer ===== */
 footer {
-  background-color: #2C3E2B;
-  color: #FDFBF7;
+  background-color: #2c3e2b;
+  color: #fdfbf7;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -297,15 +293,15 @@ footer {
 .footer-description {
   flex: 1;
   margin-left: 2rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem; /* bigger description */
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
   line-height: 1.8;
-  color: #FDFBF7;
+  color: #fdfbf7;
 }
 
 .footer-follow {
-  font-family: 'Inter', sans-serif;
-  color: #FDFBF7;
+  font-family: "Inter", sans-serif;
+  color: #fdfbf7;
   text-align: right;
 }
 
@@ -322,10 +318,51 @@ footer {
 
 .footer-bottom {
   width: 100%;
-  border-top: 1px solid #8A9A86;
+  border-top: 1px solid #8a9a86;
   text-align: center;
   margin-top: 1rem;
   padding-top: 0.5rem;
   font-size: 0.8rem;
-  color: #FDFBF7;
+  color: #fdfbf7;
+}
+
+/* ===== Popup ===== */
+.cart-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+
+  background-color: #fdfbf7;
+  color: #2c3e2b;
+
+  padding: 1.5rem 2.5rem;
+
+  border-radius: 16px;
+
+  border: 2px solid #8a9a86;
+
+  box-shadow: 0 10px 30px rgba(44, 62, 43, 0.25);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+}
+
+/* Active popup */
+.cart-popup.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translate(-50%, -50%) scale(1);
 }

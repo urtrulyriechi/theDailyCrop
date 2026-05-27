@@ -5,16 +5,16 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #FDFBF7;
-  color: #2C3E2B;
+  font-family: "Inter", sans-serif;
+  background-color: #fdfbf7;
+  color: #2c3e2b;
   line-height: 1.6;
 }
 
 /* ===== Header ===== */
 header {
-  background-color: #2C3E2B;
-  color: #FDFBF7;
+  background-color: #2c3e2b;
+  color: #fdfbf7;
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -36,9 +36,9 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #FDFBF7;
+  color: #fdfbf7;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-links a:hover {
@@ -92,34 +92,33 @@ header {
 }
 
 .hero-overlay h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
-  color: #FDFBF7;
+  color: #fdfbf7;
 }
 
 .btn {
   display: inline-block;
   background-color: #c87a53;
-  color: #FDFBF7;
+  color: #fdfbf7;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 1rem;
 }
 
 .btn:hover {
-  background-color: #2C3E2B;
+  background-color: #2c3e2b;
 }
-
 
 /* ===== Highlights Section ===== */
 .highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
-  padding: 6rem 2rem 4rem; 
+  padding: 6rem 2rem 4rem;
   text-align: center;
 }
 
@@ -131,10 +130,9 @@ header {
 
 .highlight h3 {
   color: #c87a53;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0.5rem;
 }
-
 
 /* ===== Harvest Boxes ===== */
 .boxes-preview {
@@ -142,8 +140,8 @@ header {
   text-align: center;
   background: repeating-linear-gradient(
     90deg,
-    #FDFBF7,
-    #FDFBF7 20px,
+    #fdfbf7,
+    #fdfbf7 20px,
     #c87a53 20px,
     #c87a53 40px
   );
@@ -151,7 +149,7 @@ header {
 
 .boxes-preview h2 {
   display: inline-block;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   color: #c87a53;
   background-color: #f8eeea;
@@ -174,16 +172,16 @@ header {
 }
 
 .box-cards h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #2C3E2B;
+  color: #2c3e2b;
   background-color: #f8eeea;
   padding: 0.3rem 0.8rem;
   border-radius: 6px;
   display: inline-block;
   margin-top: 0.5rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .boxes-preview .btn {
@@ -194,7 +192,7 @@ header {
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 1rem;
   border: 2px solid #8a9a86;
 }
@@ -202,7 +200,6 @@ header {
 .boxes-preview .btn:hover {
   background-color: #8a9a86;
 }
-
 
 /* ===== About Preview ===== */
 .about-preview {
@@ -221,23 +218,22 @@ header {
 
 .about-text h2:first-child {
   font-size: 3.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #c87a53;
   margin-bottom: 1rem;
 }
 
 .about-text h2:nth-child(2) {
   font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
-  color: #2C3E2B;
+  font-family: "Inter", sans-serif;
+  color: #2c3e2b;
   margin-bottom: 1rem;
 }
 
 .about-text p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 1rem;
 }
-
 
 .about-preview img {
   width: 450px;
@@ -245,41 +241,40 @@ header {
 
 .about-text .btn {
   display: inline-block;
-  background-color: #FDFBF7;
+  background-color: #fdfbf7;
   color: #c87a53;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 1rem;
-  border: 2px solid #c87a53; 
+  border: 2px solid #c87a53;
 }
 
 .about-text .btn:hover {
   background-color: #f8eeea;
 }
 
-
 /* ===== Testimonials ===== */
 .testimonials {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #8A9A86;
+  background-color: #8a9a86;
 }
 
 .testimonials h2:first-child {
   font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
-  color: #2C3E2B;
+  font-family: "Poppins", sans-serif;
+  color: #2c3e2b;
   margin-bottom: 1rem;
 }
 
 .testimonials h2:nth-child(2) {
   font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #2C3E2B;
+  color: #2c3e2b;
   margin-bottom: 2rem;
 }
 
@@ -291,7 +286,7 @@ header {
 }
 
 .testimonial {
-  background-color: #FDFBF7;
+  background-color: #fdfbf7;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(44, 62, 43, 0.25);
@@ -306,15 +301,15 @@ header {
 .testimonial span {
   display: block;
   margin-top: 1rem;
-  color: #C87A53;
+  color: #c87a53;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ===== Footer ===== */
 footer {
-  background-color: #2C3E2B;
-  color: #FDFBF7;
+  background-color: #2c3e2b;
+  color: #fdfbf7;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -331,15 +326,15 @@ footer {
 .footer-description {
   flex: 1;
   margin-left: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #FDFBF7;
+  color: #fdfbf7;
 }
 
 .footer-follow {
-  font-family: 'Inter', sans-serif;
-  color: #FDFBF7;
+  font-family: "Inter", sans-serif;
+  color: #fdfbf7;
   text-align: right;
 }
 
@@ -356,13 +351,10 @@ footer {
 
 .footer-bottom {
   width: 100%;
-  border-top: 1px solid #8A9A86;
+  border-top: 1px solid #8a9a86;
   text-align: center;
   margin-top: 1rem;
   padding-top: 0.5rem;
   font-size: 0.8rem;
-  color: #FDFBF7;
+  color: #fdfbf7;
 }
-
-
-
