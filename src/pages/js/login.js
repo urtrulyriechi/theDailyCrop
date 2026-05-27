@@ -1,8 +1,8 @@
 // ===== USERS =====
 const users = [
   {
-    username: "rie",
-    password: "rie",
+    username: "yooxie",
+    password: "yooxie123",
   },
   {
     username: "chi",
@@ -62,3 +62,8 @@ if (logoutBtn) {
     window.location.href = "login.html";
   });
 }
+
+document.getElementById('back-btn').addEventListener('click', () => {
+  history.back();
+});
+

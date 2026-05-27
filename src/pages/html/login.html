@@ -19,38 +19,6 @@
     <link rel="stylesheet" href="../css/login.css" />
   </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            src="../../assets/images/icons/dc-logo.png"
-            alt="DailyCrop Logo"
-            class="dc-logo"
-          />
-        </div>
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="boxes.html">Our Boxes</a></li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-        <div class="nav-icons">
-          <a href="cart.html"
-            ><img
-              src="../../assets/images/icons/cart-icon.png"
-              alt="Cart"
-              class="cart-icon"
-          /></a>
-          <a href="login.html"
-            ><img
-              src="../../assets/images/icons/acc-icon.png"
-              alt="Account"
-              class="profile-icon"
-          /></a>
-        </div>
-      </nav>
-    </header>
 
     <!-- Login / Account Section -->
     <section class="login-section">
@@ -95,37 +63,16 @@
 
       <!-- ACCOUNT PAGE -->
       <div class="login-container" id="account-box" style="display: none">
-        <h1>Hello, <span id="display-user"></span> 👋</h1>
+        <h1>Hello, <span id="display-user"></span> !</h1>
 
-        <p>Welcome back to DailyCrop.</p>
+        <p>Welcome back to theDailyCrop.</p>
 
-        <button id="logout-btn" class="btn">Logout</button>
+        <div class="account-actions">
+          <button id="back-btn" class="btn back-btn">← Back</button>
+          <button id="logout-btn" class="btn">Logout</button>
+        </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-      <div>
-        <img
-          src="../../assets/images/text/footer-text.png"
-          alt="Footer Logo"
-          class="footer-text"
-        />
-      </div>
-
-      <div class="footer-description">
-        Bringing fresh harvests and curated boxes straight to your doorstep.
-      </div>
-
-      <div class="footer-follow">
-        <h4>Follow Us</h4>
-        <p>Instagram</p>
-        <p>Facebook</p>
-        <p>TikTok</p>
-      </div>
-
-      <div class="footer-bottom">© 2025 Harvest Co. All Rights Reserved.</div>
-    </footer>
 
     <script src="../js/login.js"></script>
   </body>
